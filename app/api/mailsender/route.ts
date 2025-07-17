@@ -53,6 +53,9 @@ export async function POST(request: NextRequest) {
                 user: user,
                 pass: pass,
             },
+            tls: {
+                ciphers: 'SSLv3'
+            }
         })
 
         // Send email
